@@ -1,11 +1,12 @@
 @using System.Collections.Generic
 @using Soenneker.Extensions.String
+@using Soenneker.Quark.Divs
 
 @inherits Soenneker.Quark.Components.Element
 
-<div @attributes="BuildAttributes()">
+<Div @attributes="BuildAttributes()">
 	@ChildContent
-</div>
+</Div>
 
 @code {
     protected override Dictionary<string, object> BuildAttributes()
